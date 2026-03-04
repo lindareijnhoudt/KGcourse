@@ -1,0 +1,13 @@
+@prefix lin: <https://lindareijnhoudt.github.io/KGcourse/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://lindareijnhoudt.github.io/KGcourse#linda>
+  a lin:Person ;
+  lin:name "Linda Reijnhoudt" ;
+  lin:email "linda.reijnhoudt@dans.knaw.nl" ;
+  lin:worksfor <https://dans.knaw.nl> ;
+  lin:knows <http://priddy.github.io/kgcourse#mike> .
+
+<https://dans.knaw.nl>
+  a lin:Company .
