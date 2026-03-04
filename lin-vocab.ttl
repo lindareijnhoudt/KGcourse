@@ -1,0 +1,35 @@
+@prefix lin: <https://lindareijnhoudt.github.io/KGcourse> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lin:Person a rdfs:Class ;	
+	rdfs:label "Person"@en;
+	rdfs:comment "A person"@en .
+	
+lin:name a rdf:Property ;
+	rdfs:label "name"@en ;
+	rdfs:comment "A name for some thing"@en ;
+	rdfs:domain lin:Person ;
+	rdfs:range rdfs:Literal .
+	
+lin:email a rdf:Property ;
+	rdfs:label "E-mail"@en ;
+	rdfs:comment "An e-mail address of a Person"@en ;
+	rdfs:domain lin:Person ;
+	rdfs:range rdfs:Literal .	
+	
+lin:Company a rdfs:Class ;
+    rdfs:label "Company"@en ;
+    rdfs:comment "A company"@en.
+    
+lin:worksFor a rdf:Property ;
+    rdfs:label "works for"@en ;
+    rdfs:comment "describes an employment"@en ;
+    rdfs:domain lin:Person ;
+    rdfs:range: lin:Company .
+    
+lin:knows a rdf:Property ;
+    rdfs:label "knows"@en ;
+    rdfs:comment "knows"@en ;
+    rdfs:domain lin:Person ;
+    rdfs:range lin:Person .
