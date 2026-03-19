@@ -33,3 +33,32 @@ lin:knows a rdf:Property ;
     rdfs:comment "knows"@en ;
     rdfs:domain lin:Person ;
     rdfs:range lin:Person .
+
+lin:Photo a rdfs:Class;
+    rdfs:label "photo"@en ;
+    rdfs:comment "photo or picture"@en.
+    
+lin:photographer a rdf:Property ;
+    rdfs:label "photographer"@en;
+    rdfs:domain lin:Photo;
+    rdfs:range lin:Person.
+    
+lin:depicts a rdfs:Property;
+    rdfs:label "depicts"@en ;
+    rdfs:domain lin:Photo ;
+    rdfs:range lin:Person.
+    
+lin:location a rdfs:Property;
+    rdfs:label "location"@en ;
+    rdfs:domain lin:Photo ;
+    rdfs:range rdfs:Literal.
+    
+lin:title a rdfs:Property;
+    rdfs:label "title"@en ;
+    rdfs:domain lin:Photo ;
+    rdfs:range rdfs:Literal.
+    
+lin:description a rdfs:Property;
+    rdfs:label "description"@en ;
+    rdfs:domain lin:Photo ;
+    rdfs:range rdfs:Literal.    
