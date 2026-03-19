@@ -11,3 +11,11 @@
 
 <https://dans.knaw.nl>
   a lin:Company .
+
+<https://www.sweetandsassy.com/assets/sub-banner/2025/Parties.png>
+  a lin:Photo ;
+  lin:title "party time"@en ;
+  lin:photographer <http://mike.priddy.com#mike>;
+  lin:depicts <http://lindareijnhoudt.github.io/KGcourse#linda> ;
+  lin:location "my house"@en ;
+  lin:description "a party at my house with confetti"@en.
